@@ -1,16 +1,11 @@
-function solution(my_string) {
-    let result = 0;
-    
-    for(let i = 0; i < my_string.length; i++){
-        let tmp = 0;
-        while(!Number.isNaN(Number(my_string[i]))){
-            tmp += my_string[i];
-            // console.log(tmp);
-            i++;
+function solution(n) {
+    let answer = ""
+    for(let i = 0 ; i<n.length; i++){
+        if(Number.isInteger(+n[i])){
+            answer += n[i]
+        }else{
+            answer += " "
         }
-        result += Number(tmp);
-        console.log(result);
     }
-    
-    return result;
+    return answer.split(" ").reduce((acc,cur)=> acc += +cur,0)
 }
