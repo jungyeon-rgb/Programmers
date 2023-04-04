@@ -1,4 +1,4 @@
-function solution(spell, dic){
+function solution(spell, dic) {
     const isThere = [];
     
     dic.forEach((word) => {
@@ -6,7 +6,7 @@ function solution(spell, dic){
         
         spell.forEach((item) => {
             if(word.includes(item)){
-                count += 1;
+                count++;
             }
         })
         if(count === spell.length){
