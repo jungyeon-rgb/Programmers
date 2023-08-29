@@ -1,5 +1,5 @@
 const fs = require('fs');
-const input = fs.readFileSync('/dev/stdin').toString().split('\n').map(line => line.trim());
+const input = fs.readFileSync('/dev/stdin').toString().split('\n');
 
 // AAAA, BB만 가능하니까 4,2길이가 아니면 -1
 // .기준으로 문자열 나누기
